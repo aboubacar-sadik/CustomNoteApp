@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="icon" href="./svg/logo.svg" />
+		<title>Custom Note App</title>
+	</head>
+	<body>
+		<div class="modal-wrapper">
+			<form id="form">
+				<h2>Ecriver une nouvelle note</h2>
+				<label for="title">
+					Titre
+					<input type="text" name="title" id="title" placeholder="Titre de la note" />
+				</label>
+				<label for="description">
+					Description
+					<textarea
+						name="description"
+						id="description"
+						cols="30"
+						rows="10"
+						placeholder="Une brève description"
+					></textarea>
+				</label>
+				<button id="add-note-btn">Ajouter</button>
+				<span class="error-msg">Veuillez saisir quelque chose !</span>
+				<img src="./svg/close-icon.svg" alt="" class="close-icon" />
+			</form>
+		</div>
+
+		<div class="container">
+			<h1>Note App</h1>
+
+			<div class="notes-wrapper">
+				<div class="new-note note">
+					<button id="add-new-note-btn">+</button>
+					<span>Ajouter Une Note</span>
+				</div>
+			</div>
+		</div>
+		<script src="index.js" type="module"></script>
+	</body>
+</html>
